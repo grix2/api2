@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html >
+<html >
+	<head>
+		<!-- link to stylesheets reset is the meyer reset, main is the site specific CSS -->
+		<link rel="stylesheet" href="reset.css"> 
+		<link rel="stylesheet" href="main.css"> 
+		<!-- load jquery script file -->
+		<script src="../scripts/jquery-1.11.3.min.js"></script>
+		<!-- Load page fragments common to all pages -->
+		<script>
+	    $(function(){
+	      $("#footer").load("pageparts/footer.html"); 
+	      $("#header").load("pageparts/header.html"); 
+	      $("nav").load("pageparts/nav.html"); 
+	    });
+	    </script>
+	    
+	<title>Artist Hunter</title>
+	</head>	
+	<body>
+		<header id="header">
+		</header>
+		<div class="column6">
+		</div>
+		<!-- Skeleton of page body ready for javascript to populate it -->
+		<div id="content">
+			<!-- Navigation section -->
+			<nav class="column1">
+			</nav>
+			<!-- OnLine Links section -->
+			<aside id="onLine">
+			</aside>
+			<!-- This is where the main content of the page will appear -->
+			<main id="main">
+				<!-- When an artist is identified a large image will be shown here -->
+				<div id="bandimage">
+				</div>
+				<!-- When an artist is identified a biography will be shown here -->
+				<div id="bandbiog">
+				</div>
+			</main>
+		</div>
+		
+		<footer id="footer">
+		</footer>
+		<!-- Scripts specific to this page -->
+		<script src="../scripts/index.js"></script>
+		<!-- Script common to pages on the site -->
+		<script src="../scripts/all.js"></script>
+	</body>
+</html>

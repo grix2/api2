@@ -1,0 +1,221 @@
+﻿/* Set everyhing to use the box model sized at the border */
+*,
+*:before,
+*:after
+	{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/* header and footer styling Navigation Bar Styling */
+
+.banner h1{
+	font-family:"Courier New", Courier, monospace;
+	font-size:2em;
+	color:#ffbbbb;
+	text-align:center;
+}
+
+#footer, #header{
+	background-color:#f8f8f8;
+	color:#080808;
+	max-width:1100px;
+	height:70px;
+	text-align:center;
+	margin:auto;
+	overflow:auto;
+	clear:both;
+
+}
+/* Body Section styling*/
+body{
+	max-width:1100px;
+	background-color:#f8f8f8;
+	margin:auto;
+
+}
+#band{
+	width:100%;
+	margin:auto;
+	float:right;
+	
+}
+/* Format the NAV section */
+.function{
+	padding:15px 5px 5px 20px;
+	margin:0px;
+	text-align:right;
+}
+nav{
+	width:16%;
+	float:left;
+	overflow:auto;
+	clear:both;
+	font-size:1.2em;
+	background-color:#f8f8f8;
+}
+/* Format Navigation Links */
+nav a{
+	font-size:1.2em;
+	margin-right:10px;
+}
+nav a:hover,#onLine a:hover{
+	font-size:1.2em;
+	color:#ddaaaa;
+	background-color:#000000;
+}
+nav a:after,#onLine a:after{
+	font-size:1.2em;
+	color:#aaddaa;
+}
+nav a:visited,#onLine a:visited{
+	font-size:1.2em;
+	color:#aaaadd;
+}
+/* Format the OnLine ASIDE section */
+#onLine{
+	float:right;
+	width:15%;
+	margin:auto;
+}
+#onLine a{
+	font-size:1.2em;
+	color:#080808;
+	display:block;
+	text-align:center;	
+}
+
+/* centering images */
+#onLine img, #videolist img{
+    display: block;
+    margin: 15px auto;
+}
+.albumview img, #bandimage img{
+    display: block;
+    margin: 1px auto;
+    overflow:auto;
+}
+/* Main Content */
+#main{
+	clear:none;
+	float:right;
+	width:66%;
+	min-height:500px;
+}
+
+/* API styling */
+#map {
+    width: 100%;
+    height: 600px;
+    background-color: #000000;
+}
+
+.maintext{
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#ffffff;
+	color:#000000;
+}
+.column6{
+	Width:99%;
+	min-height:1px;
+	
+}
+
+.albumview{
+	width:49.5%;
+	overflow:auto;
+	float:left;
+	height: 370px;
+		
+}
+
+.albumview img{
+	overflow:auto;
+	height: 350px;
+	
+}
+.albumview h1, #videolist h1{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	color:#666666;
+	text-align:center;
+}
+
+#trackview{
+	clear:both;
+	width:100%;
+	background-color:#000000;
+	overflow:auto;
+	padding:5px;
+	margin-bottom:10px;
+	
+}
+
+#trackview span{
+	color:#ffffff;
+}
+
+.location{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:large;
+	color:#666666;
+}
+.concerthlink{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:large;
+	color:#000000;
+	
+}
+#artist{
+	text-align:center;
+	font-size:x-large;
+	color:#666666;
+}
+/* 1st Break Point */
+@media (min-width: 400px) and (max-width:1130px) {
+	nav{
+		width:50%;
+	}
+	#onLine{
+		width:50%;
+	}
+	#main{
+		width:100%;
+	}
+
+	#map {
+   		width: 95%;
+    	height: 400px;
+    	margin:auto;
+	}
+	.albumview{
+		width:98%;
+		clear:both;
+	}
+}
+/* 2nd Break Point */
+@media (min-width: 200px) and (max-width:399px) {
+	nav{
+		display:block;
+		text-align:center;	
+		width:100%;	
+	}
+	#onLine{
+		width:100%;
+		clear:both;
+	}
+	#map {
+    	width: 90%;
+    	height: 200px;
+    	clear:both;
+	}
+	.albumview{
+		width:98%;
+		clear:both;
+	}
+	.function{
+		text-align:center;
+	}
+
+}
